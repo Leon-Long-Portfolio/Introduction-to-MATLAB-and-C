@@ -1,0 +1,2 @@
+# Data Exploration and Analysis
+The objective is to clean, analyze, and draw inferences from the data, using MATLAB's Live Editor for documentation, including decision-making processes, code, and outputs like plots and charts. The analysis aims to identify correlations and patterns, requiring creative and statistical approaches to test hypotheses. Groups are tasked with submitting a comprehensive PDF report, competing in terms of creativity and analytical depth, while exploring advanced programming techniques for efficient data handling.
