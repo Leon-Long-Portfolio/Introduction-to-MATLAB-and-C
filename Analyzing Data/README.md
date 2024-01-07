@@ -5,7 +5,6 @@ This section details the process of importing data for the project. It emphasize
 ```
 Fall = table2struct(readtable('F20HW4FallData.xlsx', 'PreserveVariableNames', true));
 Spring = table2struct(readtable('F20HW4SpringData.xlsx', 'PreserveVariableNames', true));
-
 ```
 ### Data Scrubbing
 Discusses the strategies for cleaning and preprocessing the data. This includes handling NaN values, deciding on which fields to keep or remove, and the concept of feature engineering. The section underscores the importance of documenting each step of the data cleaning process.
