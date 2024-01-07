@@ -49,8 +49,8 @@ ylabel('No. of Students')
 legend('Histogram for Spring Data')
 ```
 <p align="center">
-  <img src="https://github.com/Leon-Long-Portfolio/MATLAB-Programming-EK125/blob/main/Analyzing%20Data/images/Screenshot%202024-01-07%20at%2014.12.47.png" width="500">
-    <img src="https://github.com/Leon-Long-Portfolio/MATLAB-Programming-EK125/blob/main/Analyzing%20Data/images/Screenshot%202024-01-07%20at%2014.12.59.png" width="500">
+    <img src="https://github.com/Leon-Long-Portfolio/MATLAB-Programming-EK125/blob/main/4.%20Analyzing%20Data/images/Screenshot%202024-01-07%20at%2014.12.47.png" width="400">
+    <img src="https://github.com/Leon-Long-Portfolio/MATLAB-Programming-EK125/blob/main/4.%20Analyzing%20Data/images/Screenshot%202024-01-07%20at%2014.12.59.png" width="400">
 </p>
 
 ### Data Manipulation
@@ -81,13 +81,13 @@ xlabel('Final Grade (%)')
 ylabel('No. of Students')
 ```
 <p align="center">
-  <img src="https://github.com/Leon-Long-Portfolio/MATLAB-Programming-EK125/blob/main/Analyzing%20Data/images/Screenshot%202024-01-07%20at%2014.14.29.png" width="500">
-    <img src="https://github.com/Leon-Long-Portfolio/MATLAB-Programming-EK125/blob/main/Analyzing%20Data/images/Screenshot%202024-01-07%20at%2014.14.35.png" width="490">
+  <img src="https://github.com/Leon-Long-Portfolio/MATLAB-Programming-EK125/blob/main/4.%20Analyzing%20Data/images/Screenshot%202024-01-07%20at%2014.14.29.png" width="400">
+    <img src="https://github.com/Leon-Long-Portfolio/MATLAB-Programming-EK125/blob/main/4.%20Analyzing%20Data/images/Screenshot%202024-01-07%20at%2014.14.35.png" width="390">
 </p>
 
 <p align="center">
-  <img src="https://github.com/Leon-Long-Portfolio/MATLAB-Programming-EK125/blob/main/Analyzing%20Data/images/Screenshot%202024-01-07%20at%2014.14.41.png" width="500">
-    <img src="https://github.com/Leon-Long-Portfolio/MATLAB-Programming-EK125/blob/main/Analyzing%20Data/images/Screenshot%202024-01-07%20at%2014.14.52.png" width="490">
+  <img src="https://github.com/Leon-Long-Portfolio/MATLAB-Programming-EK125/blob/main/4.%20Analyzing%20Data/images/Screenshot%202024-01-07%20at%2014.14.41.png" width="400">
+    <img src="https://github.com/Leon-Long-Portfolio/MATLAB-Programming-EK125/blob/main/4.%20Analyzing%20Data/images/Screenshot%202024-01-07%20at%2014.14.52.png" width="390">
 </p>
 
 ### Results
@@ -109,6 +109,6 @@ end
 table(LetterGrades', STD', PercentageGrade', 'VariableNames', {'Letter Grade', 'Percentage from Mean', 'Standard Deviation'})
 ```
 <p align="center">
-  <img src="https://github.com/Leon-Long-Portfolio/MATLAB-Programming-EK125/blob/main/Analyzing%20Data/images/Screenshot%202024-01-07%20at%2014.15.01.png" width="500">
-    <img src="https://github.com/Leon-Long-Portfolio/MATLAB-Programming-EK125/blob/main/Analyzing%20Data/images/Screenshot%202024-01-07%20at%2014.15.07.png" width="490">
+  <img src="https://github.com/Leon-Long-Portfolio/MATLAB-Programming-EK125/blob/main/4.%20Analyzing%20Data/images/Screenshot%202024-01-07%20at%2014.15.01.png" width="400">
+    <img src="https://github.com/Leon-Long-Portfolio/MATLAB-Programming-EK125/blob/main/4.%20Analyzing%20Data/images/Screenshot%202024-01-07%20at%2014.15.07.png" width="400">
 </p>
