@@ -28,7 +28,7 @@ HeatmapMatData.XDisplayLabels = HeatmapMatDataLabels;
 HeatmapMatData.YDisplayLabels = HeatmapMatDataLabels;
 ```
 <p align="center">
-  <img src="https://github.com/Leon-Long-Portfolio/MATLAB-Programming-EK125/blob/main/Introduction%20to%20Machine%20Learning/images/Screenshot%202024-01-07%20at%2014.45.55.png" width="500">
+  <img src="https://github.com/Leon-Long-Portfolio/MATLAB-Programming-EK125/blob/main/5.%20Introduction%20to%20Machine%20Learning/images/Screenshot%202024-01-07%20at%2014.45.55.png" width="500">
 </p>
 
 ### Significant Variable Identification
@@ -66,7 +66,7 @@ for r = 1:counter-1
 end
 ```
 <p align="center">
-  <img src="https://github.com/Leon-Long-Portfolio/MATLAB-Programming-EK125/blob/main/Introduction%20to%20Machine%20Learning/images/Screenshot%202024-01-07%20at%2014.46.04.png" width="500">
+  <img src="https://github.com/Leon-Long-Portfolio/MATLAB-Programming-EK125/blob/main/5.%20Introduction%20to%20Machine%20Learning/images/Screenshot%202024-01-07%20at%2014.46.04.png" width="500">
 </p>
 
 ### Regression Coefficients and Evaluation
@@ -86,14 +86,16 @@ Describes the process of dividing the data into training and test sets for build
   TestData = array2table(ScrubData1(idx(round(P*MatDataRows)+1:end),:),'VariableNames', {'Gender', 'Age', 'CigsPerDay', 'TotalCholesterol', 'SystolicBP', 'Glucose', 'TenYearCHD'});
 ```
 Logistic Regression using All Features
+
 <p align="center">
-  <img src="https://github.com/Leon-Long-Portfolio/MATLAB-Programming-EK125/blob/main/Introduction%20to%20Machine%20Learning/images/Screenshot%202024-01-07%20at%2014.46.29.png" width="490">
-  <img src="https://github.com/Leon-Long-Portfolio/MATLAB-Programming-EK125/blob/main/Introduction%20to%20Machine%20Learning/images/Screenshot%202024-01-07%20at%2014.46.35.png" width="500">
+  <img src="https://github.com/Leon-Long-Portfolio/MATLAB-Programming-EK125/blob/main/5.%20Introduction%20to%20Machine%20Learning/images/Screenshot%202024-01-07%20at%2014.46.29.png" width="390">
+  <img src="https://github.com/Leon-Long-Portfolio/MATLAB-Programming-EK125/blob/main/5.%20Introduction%20to%20Machine%20Learning/images/Screenshot%202024-01-07%20at%2014.46.35.png" width="400">
 </p>
 Logistic Regression using Selective Features
+
 <p align="center">
-  <img src="https://github.com/Leon-Long-Portfolio/MATLAB-Programming-EK125/blob/main/Introduction%20to%20Machine%20Learning/images/Screenshot%202024-01-07%20at%2014.46.46.png" width="500">
-  <img src="https://github.com/Leon-Long-Portfolio/MATLAB-Programming-EK125/blob/main/Introduction%20to%20Machine%20Learning/images/Screenshot%202024-01-07%20at%2014.46.57.png" width="500">
+  <img src="https://github.com/Leon-Long-Portfolio/MATLAB-Programming-EK125/blob/main/5.%20Introduction%20to%20Machine%20Learning/images/Screenshot%202024-01-07%20at%2014.46.46.png" width="400">
+  <img src="https://github.com/Leon-Long-Portfolio/MATLAB-Programming-EK125/blob/main/5.%20Introduction%20to%20Machine%20Learning/images/Screenshot%202024-01-07%20at%2014.46.57.png" width="400">
 </p>
 
 ### Model Evaluation and Testing
@@ -122,7 +124,7 @@ ResultsData = trainedModel.predictFcn(TestData);
   end
 ```
 <p align="center">
-  <img src="https://github.com/Leon-Long-Portfolio/MATLAB-Programming-EK125/blob/main/Introduction%20to%20Machine%20Learning/images/Screenshot%202024-01-07%20at%2014.47.10.png" width="500">
+  <img src="https://github.com/Leon-Long-Portfolio/MATLAB-Programming-EK125/blob/main/5.%20Introduction%20to%20Machine%20Learning/images/Screenshot%202024-01-07%20at%2014.47.10.png" width="500">
 </p>
 
 ### Visualization of Logistic Regression Results
@@ -134,8 +136,8 @@ ResultMat = [Correct, T1P1, T0P0, LengthResultsData - Correct, T0P1, T1P0];
 ```
 Logistic Regression using All Features vs Selective Features
 <p align="center">
-  <img src="https://github.com/Leon-Long-Portfolio/MATLAB-Programming-EK125/blob/main/Introduction%20to%20Machine%20Learning/images/Screenshot%202024-01-07%20at%2014.46.41.png" width="491">
-  <img src="https://github.com/Leon-Long-Portfolio/MATLAB-Programming-EK125/blob/main/Introduction%20to%20Machine%20Learning/images/Screenshot%202024-01-07%20at%2014.47.02.png" width="500">
+  <img src="https://github.com/Leon-Long-Portfolio/MATLAB-Programming-EK125/blob/main/5.%20Introduction%20to%20Machine%20Learning/images/Screenshot%202024-01-07%20at%2014.46.41.png" width="391">
+  <img src="https://github.com/Leon-Long-Portfolio/MATLAB-Programming-EK125/blob/main/5.%20Introduction%20to%20Machine%20Learning/images/Screenshot%202024-01-07%20at%2014.47.02.png" width="400">
 </p>
 
 ### Please read the report PDF in this repository for more!
