@@ -1,0 +1,3 @@
+# Live Editor and Debugging in MATLAB for EK 125
+
+This project is designed to enhance familiarity with MATLAB's Live Editor and its debugging tools, while reinforcing previously learned concepts. The Live Editor provides an interactive environment to write, run, and modify code directly, making it an ideal platform for visualizing data and sharing analyses. Debugging tools within MATLAB are instrumental in identifying and correcting errors in code, offering an opportunity to understand common programming mistakes and how to resolve them efficiently. Overall, this project serves as a practical application of MATLAB's features, aiming to deepen understanding and proficiency in both code development and problem-solving techniques.
