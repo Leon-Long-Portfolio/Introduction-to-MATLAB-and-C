@@ -48,3 +48,67 @@ xlabel('Final Grade (%)')
 ylabel('No. of Students')
 legend('Histogram for Spring Data')
 ```
+<p align="center">
+  <img src="https://github.com/Leon-Long-Portfolio/MATLAB-Programming-EK125/blob/main/Analyzing%20Data/images/Screenshot%202024-01-07%20at%2014.12.47.png" width="500">
+    <img src="https://github.com/Leon-Long-Portfolio/MATLAB-Programming-EK125/blob/main/Analyzing%20Data/images/Screenshot%202024-01-07%20at%2014.12.59.png" width="500">
+</p>
+
+### Data Manipulation
+Describes the core analytical processes applied to the data, including statistical analyses and the generation of various plots and charts. This section is the heart of the assignment, where data is dissected to meet the set goals and test the hypotheses. Data is visualizes with `hisfit` before and after removing outliers.
+```
+histfit(FallVec, 50)
+title('Fall Semester Final Grades')
+xlabel('Final Grade (%)')
+ylabel('No. of Students')
+legend('Histogram for Fall Data')
+
+histfit(SpringVec, 50)
+title('Spring Semester Final Grades')
+xlabel('Final Grade (%)')
+ylabel('No. of Students')
+
+FallVec = rmoutliers(FallVec, 'mean');
+histfit(FallVec, 50)
+title('Fall Semester Final Grades')
+xlabel('Final Grade (%)')
+ylabel('No. of Students')
+legend('Histogram for Fall Data')
+
+SpringVec = rmoutliers(SpringVec, 'mean');
+histfit(SpringVec, 50)
+title('Spring Semester Final Grades')
+xlabel('Final Grade (%)')
+ylabel('No. of Students')
+```
+<p align="center">
+  <img src="https://github.com/Leon-Long-Portfolio/MATLAB-Programming-EK125/blob/main/Analyzing%20Data/images/Screenshot%202024-01-07%20at%2014.14.29.png" width="500">
+    <img src="https://github.com/Leon-Long-Portfolio/MATLAB-Programming-EK125/blob/main/Analyzing%20Data/images/Screenshot%202024-01-07%20at%2014.14.35.png" width="490">
+</p>
+
+<p align="center">
+  <img src="https://github.com/Leon-Long-Portfolio/MATLAB-Programming-EK125/blob/main/Analyzing%20Data/images/Screenshot%202024-01-07%20at%2014.14.41.png" width="500">
+    <img src="https://github.com/Leon-Long-Portfolio/MATLAB-Programming-EK125/blob/main/Analyzing%20Data/images/Screenshot%202024-01-07%20at%2014.14.52.png" width="490">
+</p>
+
+### Results
+This section involves drawing conclusions from the data analysis. It discusses whether the findings support or reject the initial hypotheses and the implications of these findings. The images display the results in table form.
+```
+% Tabulating Final Grades into Letter Grades
+Fallstd = tsnanstd(FallVec);
+LetterGrades = ["A", "A-", "B+", "B", "B-", "C+", "C", "C-", "D"];
+STD = [(4/3)*Fallstd, Fallstd, (2/3)*Fallstd, (1/3)*Fallstd, 0.0000, (-1/3)*Fallstd, (-2/3)*Fallstd, (-1)*Fallstd, (-4/3)*Fallstd];
+PercentageGrade = [];
+for i = 1:length(STD)
+    PercentageGrade(i) = tsnanmean(FallVec) + STD(i);
+end
+table(LetterGrades', STD', PercentageGrade', 'VariableNames', {'Letter Grade', 'Percentage from Mean', 'Standard Deviation'})
+Springstd = tsnanstd(SpringVec);
+for i = 1:length(STD)
+    PercentageGrade(i) = tsnanmean(SpringVec) + STD(i);
+end
+table(LetterGrades', STD', PercentageGrade', 'VariableNames', {'Letter Grade', 'Percentage from Mean', 'Standard Deviation'})
+```
+<p align="center">
+  <img src="https://github.com/Leon-Long-Portfolio/MATLAB-Programming-EK125/blob/main/Analyzing%20Data/images/Screenshot%202024-01-07%20at%2014.15.01.png" width="500">
+    <img src="https://github.com/Leon-Long-Portfolio/MATLAB-Programming-EK125/blob/main/Analyzing%20Data/images/Screenshot%202024-01-07%20at%2014.15.07.png" width="490">
+</p>
